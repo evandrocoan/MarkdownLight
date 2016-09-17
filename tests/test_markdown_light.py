@@ -1,6 +1,6 @@
-import syntax_test
+import new_syntax_test
 
-class TestMarkdownLight(syntax_test.SyntaxTestCase):
+class TestMarkdownLight(new_syntax_test.SyntaxTestCase):
     def setUp(self):
         super().setUp()
         self.set_syntax_file("Packages/MarkdownLight/MarkdownLight.tmLanguage")
