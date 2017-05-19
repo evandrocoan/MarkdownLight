@@ -29,17 +29,47 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
+				<key>guide</key>
+				<string>#8c8c8c</string>
+				<key>stackGuide</key>
+				<string>#8c8c8c</string>
+				<key>activeGuide</key>
+				<string>#FF0000</string>
 				<key>caret</key>
-				<string>#373b41</string>
+				<string>#000000</string>
 				<key>foreground</key>
-				<string>#373b41</string>
+				<string>#000000</string>
+				<key>tagsForeground</key>
+				<string>#75D975</string>
+				<key>findHighlight</key>
+				<string>#75D975</string>
+				<key>popupCss</key>
+				<string><![CDATA[ html { background-color: #B9B9B9; }]]></string>
 				<key>invisibles</key>
-				<string>#dcdcdd</string>
+				<string>#B3B3B3</string>
 				<key>lineHighlight</key>
-				<string>#b4b7b455</string>
+				<string>#DADAFF</string>
 				<key>selection</key>
-				<string>#dcdcdd</string>
+				<string>#B9B9B9</string>
+				<key>gutter</key>
+				<string>#F0F0F0</string>
+				<key>selectionBorder</key>
+				<string>#555555</string>
+				<key>shadow</key>
+				<string>#1d1f21</string>
+				<key>shadowWidth</key>
+				<string>42</string>
+				<key>bracketsOptions</key>
+				<string>underline</string>
+				<key>misspelling</key>
+				<string>#FF0000</string>
+				<key>bracketsForeground</key>
+				<string>#FF0000</string>
+				<key>bracketContentsOptions</key>
+				<string>underline</string>
+				<key>bracketContentsForeground</key>
+				<string>#FF0000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -424,7 +454,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#373b41</string>
+				<string>#1c1e21</string>
 			</dict>
 		</dict>
 		<dict>
@@ -515,7 +545,7 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#f0f0f0</string>
+				<string>#E0E0E0</string>
 				<key>foreground</key>
 				<string>#828a95</string>
 			</dict>
