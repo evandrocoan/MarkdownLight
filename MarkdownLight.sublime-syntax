@@ -250,6 +250,18 @@ contexts:
             2: variable.language.fenced.markdown
           pop: true
         - include: scope:source.shell
+    - match: (\s*```)\s*(batch)\s*$
+      captures:
+        1: punctuation.definition.fenced.markdown
+        2: variable.language.fenced.markdown
+      push:
+        - meta_scope: markup.raw.block.markdown markup.raw.block.fenced.markdown
+        - match: (\1)\n
+          captures:
+            1: punctuation.definition.fenced.markdown
+            2: variable.language.fenced.markdown
+          pop: true
+        - include: scope:source.dosbatch
     - match: (\s*```)\s*(sass|scss)\s*$
       captures:
         1: punctuation.definition.fenced.markdown
