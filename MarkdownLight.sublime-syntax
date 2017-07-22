@@ -477,6 +477,27 @@ contexts:
     - include: valid_ampersand
     - include: valid_bracket
     - include: scope:text.html.basic
+
+  # The `url` scope is eating the whole link, therefore the contexts required to be popped form the
+  # stack matching the end of the string will not pop because the `url` context eat everything.
+  inline_without_url:
+    - include: escape
+    - include: inline_raw
+    - include: image
+    - include: implicit_image
+    - include: reference_image
+    - include: link
+    - include: implicit_link
+    - include: reference_link
+    - include: email
+    - include: bold_italic
+    - include: bold
+    - include: italic
+    - include: strikethrough
+    - include: manual_line_break
+    - include: valid_ampersand
+    - include: valid_bracket
+    - include: scope:text.html.basic
   inline_raw:
     - match: (`+)(.+?)(\1)
       scope: markup.raw.inline.markdown
@@ -516,7 +537,7 @@ contexts:
             6: punctuation.definition.string.end.markdown
             7: punctuation.definition.metadata.markdown
           pop: true
-        - include: inline
+        - include: inline_without_url
   list_item:
     - match: '^(?=\s*([*+-]|\d+\.)[ ])'
       push:
